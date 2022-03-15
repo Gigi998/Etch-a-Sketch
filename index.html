@@ -8,13 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="board"></div>
-    <div>
-        <input type="text" placeholder="Size of the border" value="16">
-        <button>Set size</button>
-        <button onclick="reset()">Reset</button>
-        <button onclick="red()">Red</button>
-        <button onclick="black()">Black</button>
+    <div id="flex">
+        <div><h1>Sketch pad</h1>
+            <div class="board"></div>
+            <div class="buttons">
+                <button id="btn" onclick="makeGrid()">Start game</button>
+                <button id="btn" onclick="reset()">Reset</button>
+                <button id="btn" onclick="color()">Random Color</button>
+                <button id="btn"onclick="eraser()">Eraser</button>                
+            </div>
+        </div>
     </div>
     <script src="javascript.js"></script>
 </body>
